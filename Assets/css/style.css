@@ -1,6 +1,25 @@
+body {
+    margin: 0%;
+}
 header {
     opacity: .8;
+    margin: 0;
 }
 .container {
-    opacity: .9
+    opacity: .9;
+}
+
+#submitButton {
+    margin-top: 2px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    opacity: .9;
+}
+
+#rowSubmit {
+    margin: 0%;
+}
+
+h3 {
+    margin-top: 20px;
 }

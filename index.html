@@ -19,7 +19,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body background="./Assets/images/easter.jpg">
-    <header class="bg-primary text-white text-center opacity-.5">
+    <header class="bg-info text-white text-center opacity-.5">
         <h1>Easter Trivia Game</h1>
         <p>Test your Easter knowledge</p>
     </header>
@@ -28,91 +28,57 @@
             <div id="results">
                 <form name="quizForm" onsubmit="return submitAnswers()">
                     <h3>1. How do the majority of kids eat their chocolate bunnies?</h3>
-                <input type="radio" name="q1" value="a" id="q1a">Broken into pieces<br>
-                <input type="radio" name="q1" value="a" id="q1a">Tail first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Ears first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Feet first<br>
+                <input type="radio" name="q1" value="a" id="q1a"> Broken into pieces<br>
+                <input type="radio" name="q1" value="b" id="q1b"> Tail first<br>
+                <input type="radio" name="q1" value="c" id="q1c"> Ears first<br>
+                <input type="radio" name="q1" value="d" id="q1d"> Feet first<br>
+                    <br>
+                    <h3>2.What was the first Easter basket supposed to resemble?</h3>
+                <input type="radio" name="q2" value="a" id="q2a"> A flower pot<br>
+                <input type="radio" name="q2" value="b" id="q2b"> A fruit basket<br>
+                <input type="radio" name="q2" value="c" id="q2c"> A bird's nest<br>
+                <input type="radio" name="q2" value="d" id="q2d"> A kangaroo pouch<br>
+                    <br>
+                    <h3>3. In Australia, rabbits are not a popular animal, so which creature do they use instead?</h3>
+                <input type="radio" name="q3" value="a" id="q3a"> Wombat<br>
+                <input type="radio" name="q3" value="a" id="q3b"> Koala<br>
+                <input type="radio" name="q3" value="a" id="q3c"> Bilby<br>
+                <input type="radio" name="q3" value="a" id="q3d"> Kangaroo<br>
+                    <br>
+                    <h3>4. The second largest holiday for eating cand is Easter. Which is the first?</h3>
+                <input type="radio" name="q4" value="a" id="q4a"> Independence Day<br>
+                <input type="radio" name="q4" value="a" id="q4b"> Christmas<br>
+                <input type="radio" name="q4" value="a" id="q4c"> Halloween<br>
+                <input type="radio" name="q4" value="a" id="q4d"> Thanksgiving<br>
+                    <br>
+                    <h3>5. The most popular American Easter candy is?</h3>
+                <input type="radio" name="q5" value="a" id="q5a"> Chocolate bunnies<br>
+                <input type="radio" name="q5" value="a" id="q5b"> Marshmallow peeps<br>
+                <input type="radio" name="q5" value="a" id="q5c"> Jelly beans<br>
+                <input type="radio" name="q5" value="a" id="q5d"> Chocolate, cream-filled eggs<br>
+                    <br>
+                    <h3>6. What flower is associated with Easter?</h3>
+                <input type="radio" name="q6" value="a" id="q6a"> Rose<br>
+                <input type="radio" name="q6" value="a" id="q6b"> Lily<br>
+                <input type="radio" name="q6" value="a" id="q6c"> Pansy<br>
+                <input type="radio" name="q6" value="a" id="q6c"> Crocus<br>
+                    <br>
+                    <h3>7. The Romans, in an effort to mock Jesus, gave him a "crown" of what?</h3>
+                <input type="radio" name="q7" value="a" id="q7a"> Wire<br>
+                <input type="radio" name="q7" value="a" id="q7b"> Ivy<br>
+                <input type="radio" name="q7" value="a" id="q7c"> Flowers<br>
+                <input type="radio" name="q7" value="a" id="q7d"> Thorns<br>
+                    <br>
+                    <h3>8. Some countries (Mexico, Spain, and Greece) have bonfires at Easter time. What is burned in these fires?</h3>
+                <input type="radio" name="q8" value="a" id="q8a"> Crosses made out of straw<br>
+                <input type="radio" name="q8" value="a" id="q8b"> Effigies of Judas<br>
+                <input type="radio" name="q8" value="a" id="q8c"> Colored paper eggs<br>
+                <input type="radio" name="q8" value="a" id="q8d"> A giant cloth Easter bunny<br>
+                <br><br>
+                <input class="btn-bg btn-danger" type="submit" value="Submit Answers" id="submitButton">
             </form>
             </div>
         </section>
-        <section>
-            <div id="results">
-                <form name="quizForm" onsubmit="return submitAnswers()">
-                    <h3>1. How do the majority of kids eat their chocolate bunnies?</h3>
-                <input type="radio" name="q1" value="a" id="q1a">Broken into pieces<br>
-                <input type="radio" name="q1" value="a" id="q1a">Tail first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Ears first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Feet first<br>
-            </form>
-            </div>
-        </section>
-        <section>
-            <div id="results">
-                <form name="quizForm" onsubmit="return submitAnswers()">
-                    <h3>1. How do the majority of kids eat their chocolate bunnies?</h3>
-                <input type="radio" name="q1" value="a" id="q1a">Broken into pieces<br>
-                <input type="radio" name="q1" value="a" id="q1a">Tail first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Ears first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Feet first<br>
-            </form>
-            </div>
-        </section>
-        <section>
-            <div id="results">
-                <form name="quizForm" onsubmit="return submitAnswers()">
-                    <h3>1. How do the majority of kids eat their chocolate bunnies?</h3>
-                <input type="radio" name="q1" value="a" id="q1a">Broken into pieces<br>
-                <input type="radio" name="q1" value="a" id="q1a">Tail first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Ears first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Feet first<br>
-            </form>
-            </div>
-        </section>
-        <section>
-            <div id="results">
-                <form name="quizForm" onsubmit="return submitAnswers()">
-                    <h3>1. How do the majority of kids eat their chocolate bunnies?</h3>
-                <input type="radio" name="q1" value="a" id="q1a">Broken into pieces<br>
-                <input type="radio" name="q1" value="a" id="q1a">Tail first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Ears first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Feet first<br>
-            </form>
-            </div>
-        </section>
-        <section>
-            <div id="results">
-                <form name="quizForm" onsubmit="return submitAnswers()">
-                    <h3>1. How do the majority of kids eat their chocolate bunnies?</h3>
-                <input type="radio" name="q1" value="a" id="q1a">Broken into pieces<br>
-                <input type="radio" name="q1" value="a" id="q1a">Tail first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Ears first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Feet first<br>
-            </form>
-            </div>
-        </section>
-        <section>
-            <div id="results">
-                <form name="quizForm" onsubmit="return submitAnswers()">
-                    <h3>1. How do the majority of kids eat their chocolate bunnies?</h3>
-                <input type="radio" name="q1" value="a" id="q1a">Broken into pieces<br>
-                <input type="radio" name="q1" value="a" id="q1a">Tail first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Ears first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Feet first<br>
-            </form>
-            </div>
-        </section>
-        <section>
-            <div id="results">
-                <form name="quizForm" onsubmit="return submitAnswers()">
-                    <h3>1. How do the majority of kids eat their chocolate bunnies?</h3>
-                <input type="radio" name="q1" value="a" id="q1a">Broken into pieces<br>
-                <input type="radio" name="q1" value="a" id="q1a">Tail first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Ears first<br>
-                <input type="radio" name="q1" value="a" id="q1a">Feet first<br>
-            </form>
-            </div>
-        </section>
-    </div>
     <script type="text/javascript" src="./Assets/javascript/game.js"></script>
 </body>
 </html>
