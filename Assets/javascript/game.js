@@ -14,32 +14,42 @@ function submitAnswers() {
 
     //console.log(q1);
 
-    const answers = ["a","c","d","b","a","b","d","c"]
+    
+    const answers = ["a","a","a","a","a","a","a","a"]
 
     if(q1 === answers[0]) {
          score++;
     }
+
     if(q2 === answers[1]) {
         score++;
     }
-   if(q3 === answers[2]) {
-    score++;
-    }
-    if(q4 === answers[3]) {
-    score++;
-    }
-    if(q5 === answers[4]) {
-    score++;
-    }
-    if(q6 === answers[5]) {
-    score++;
-    }
-    if(q7 === answers[6]) {
-    score++;
-    }
-    if(q8 === answers[7]) {
-    score++;
+
+    if(q3 === answers[2]) {
+        score++;
     }
 
+    if(q4 === answers[3]) {
+        score++;
+    }
+
+    if(q5 === answers[4]) {
+        score++;
+    }
+
+    if(q6 === answers[5]) {
+        score++;
+    }
+
+    if(q7 === answers[6]) {
+        score++;
+    }
+
+    if(q8 === answers[7]) {
+        score++;
+    }
+
+    alert("You got " +score+" out of " + total+ " questions correct.");
+    
     return false;
 }
