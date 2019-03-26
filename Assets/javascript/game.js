@@ -49,7 +49,7 @@ function submitAnswers() {
         score++;
     }
 
-    alert("You got " +score+" out of " + total+ " questions correct.");
+    alert("You got " +score+" out of " + total + " questions correct.");
     
     return false;
 }
