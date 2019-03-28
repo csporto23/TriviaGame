@@ -10,7 +10,7 @@
 
 //timer**
 
-let number = 8;
+let number = 300;
 var intervalId;
 
 function stop() {
@@ -54,10 +54,8 @@ function submitAnswers() {
     var q7 = document.forms["quizForm"]["q7"].value;
     var q8 = document.forms["quizForm"]["q8"].value;
 
+    var answers = ["a","c","d","b","a","b","d","c"];
     //console.log(q1);
-
-    
-    const answers = ["a","c","d","b","a","b","d","c"]
 
     if(q1 === answers[0]) {
          score++;
@@ -105,7 +103,12 @@ function callResults() {
     const results = "You got " +score+" out of " + total + " questions correct."
     $("#results").html(results)
 }
-    
+ 
+// function answerSheet() {
+//     for (let i = 0; i < answers.length; i++)
+//     $("#answerSheet").html(answers[i]);
+// }
+
 $("#submitButton").on("click", function(){
     callResults();
 })
