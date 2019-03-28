@@ -20,14 +20,9 @@
         <h1>Easter Trivia Game</h1>
         <p>Test your Easter knowledge</p>
     </header>
-    <div class="row">
-        <div class="col-5"></div>
-        <div class="col-3 ml-4">
-                <button type="button" class="btn btn-success" id="startButton">Start Game</button>
-        </div>
-       <div class="col-3"></div>
-    </div>
+    <div class="d-flex justify-content-center"><button type="button" class="btn-lg btn-success" id="startButton">Start Game</button></div>
     
+                
         <h2 class="text-center bg-success" id="show-number"></h2>
             <div class="text-center bg-success" id="answerSheet"></div>
     <div class="container bg-success">
@@ -82,7 +77,8 @@
                 <input type="radio" name="q8" value="c" id="q8c">c. Colored paper eggs<br>
                 <input type="radio" name="q8" value="d" id="q8d">d. A giant cloth Easter bunny<br>
                 <br><br>
-                <input class="btn-bg btn-danger" type="submit" value="Submit Answers" id="submitButton">
+                <div class="d-flex justify-content-center"><input class="btn-bg btn-danger" type="submit" value="Submit Answers" id="submitButton"></div>
+                
             </form>
             </div>
         </section>
