@@ -1,6 +1,48 @@
+
+ //$("#startButton").css("visibility", "hidden")
+//  function startGame() {
+//      $("#startButton".css("visibility", "hidden"));
+//  }
+ 
+ 
+
+
+
+//timer**
+
+let number = 8;
+var intervalId;
+
+function stop() {
+    clearInterval(intervalId);
+  };
+
+function run() {
+    clearInterval(intervalId);
+    intervalId = setInterval(decrement, 1000);
+  };
+
+function decrement() {
+    number--;
+$("#show-number").html(number);
+
+if (number === 0) {
+    stop();
+}
+};
+
+$("#startButton").on("click", run);
+
+$("#submitButton").on("click", stop);
+
+
+//answers**
+
+const total = 8;
+var score = 0;
+
 function submitAnswers() {
-    var total = 8;
-    var score = 0;
+    
 
     //get the users choice
     var q1 = document.forms["quizForm"]["q1"].value;
@@ -15,7 +57,7 @@ function submitAnswers() {
     //console.log(q1);
 
     
-    const answers = ["a","a","a","a","a","a","a","a"]
+    const answers = ["a","c","d","b","a","b","d","c"]
 
     if(q1 === answers[0]) {
          score++;
@@ -49,7 +91,26 @@ function submitAnswers() {
         score++;
     }
 
-    alert("You got " +score+" out of " + total + " questions correct.");
+
+    $(".container").css("display", "none")
+
+    //$(".row").css("display", "none")
+
     
     return false;
 }
+
+
+function callResults() {
+    const results = "You got " +score+" out of " + total + " questions correct."
+    $("#results").html(results)
+}
+    
+$("#submitButton").on("click", function(){
+    callResults();
+})
+
+
+// submitAnswers();
+//const startGame = 0
+//if(time === 0:00){submitAnswers();};
