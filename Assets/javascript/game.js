@@ -1,4 +1,4 @@
-let number = 61;
+let number = 91;
  var intervalId;
 
 const answerSheet = [" 1.c", " 2.c", " 3.c"," 4.c"," 5.d"," 6.b"," 7.d"," 8.b"];
@@ -16,7 +16,7 @@ const answerSheet = [" 1.c", " 2.c", " 3.c"," 4.c"," 5.d"," 6.b"," 7.d"," 8.b"];
      number--;
  $("#show-number").html("You have " + number + " seconds left.");
 
- if (number > 0 && number <= 60 ){
+ if (number > 0 && number <= 90 ){
     $("#startButton").css("display", "none");
     $(".container").css("visibility", "visible");
     $("#show-number").css("visibility", "visible");
