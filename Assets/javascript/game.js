@@ -70,7 +70,7 @@ function submitAnswers() {
     var q7 = document.forms["quizForm"]["q7"].value;
     var q8 = document.forms["quizForm"]["q8"].value;
 
-    const answers = ["a","a","a","a","a","a","a","a"];
+    const answers = ["c","c","c","c","d","b","d","b"];
     
 
     if(q1 === answers[0]) {
