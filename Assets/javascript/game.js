@@ -10,7 +10,7 @@
 
 //timer**
 
- let number = 4;
+ let number = 61;
  var intervalId;
 
  function stop() {
