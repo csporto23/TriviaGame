@@ -1,17 +1,7 @@
-
- //$("#startButton").css("visibility", "hidden")
-//  function startGame() {
-//      $("#startButton".css("visibility", "hidden"));
-//  }
- 
- 
-
-
-
-//timer**
-
- let number = 61;
+let number = 61;
  var intervalId;
+
+const answerSheet = [" 1.c", " 2.c", " 3.c"," 4.c"," 5.d"," 6.b"," 7.d"," 8.b"];
 
  function stop() {
      clearInterval(intervalId);
@@ -22,17 +12,15 @@
      intervalId = setInterval(decrement, 1000);
    };
 
-   function containerDisappear() {
-    $(".container").css("visibility", "visible");
-   }
-
  function decrement() {
      number--;
- $("#show-number").html(number);
+ $("#show-number").html("You have " + number + " seconds left.");
 
  if (number > 0 && number <= 60 ){
     $("#startButton").css("display", "none");
-    containerDisappear();
+    $(".container").css("visibility", "visible");
+    $("#show-number").css("visibility", "visible");
+    $("#answerSheet").css("visibility", "visible");
  };
 
 
@@ -47,9 +35,9 @@
 
  
 
- $("#startButton").on("click", run);
+ $("#startButton").on("click", run)
 
- $("#submitButton").on("click", stop);
+ $("#submitButton").on("click", stop)
 
  
 //answers**
@@ -106,7 +94,9 @@ function submitAnswers() {
     };
 
     // $(".container").css("display", "none");
-
+    $(".container").css("display", "none");
+    $("#show-number").css("visibility", "hidden");
+    $("#answerSheet").html("Easter Answers: " + answerSheet)
     $("#resultsDiv").html("You got " + score +" out of " + total+ " questions correct.");
     return false;
 };

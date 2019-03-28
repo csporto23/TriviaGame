@@ -27,5 +27,18 @@ h3 {
 }
 
 #startButton {
-    margin-left: 36px;
+    align-content: center;
+}
+
+#show-number {
+    margin-bottom: 8px;
+    margin-top: 4px;
+    margin-right: 70px;
+    visibility: hidden;
+}
+
+#answerSheet {
+    margin-bottom: 8px;
+    margin-top:4px;
+    visibility: hidden;
 }
