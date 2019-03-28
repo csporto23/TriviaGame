@@ -6,9 +6,12 @@ header {
     margin: 0;
 }
 .container {
-    opacity: .9;
+    opacity: .8;
     margin-bottom: 20px;
+    margin-top: 80px;
     visibility: hidden;
+    position: relative;
+    border-radius: 10px;
 }
 
 #submitButton {
@@ -16,7 +19,6 @@ header {
     margin-bottom: 20px;
     margin-left: 40px;
     padding: 10px;
-    opacity: .9;
 }
 
 #rowSubmit {
@@ -30,16 +32,42 @@ h3 {
 #startButton {
     margin-bottom: 4px;
     margin-top: 4px;
+    opacity: .8;
 }
 
 #show-number {
+    opacity: .8;
     margin-bottom: 8px;
     margin-top: 4px;
     visibility: hidden;
+    position: fixed;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: +1;
 }
 
 #answerSheet {
     margin-bottom: 8px;
     margin-top:4px;
     visibility: hidden;
+    font-size: 20px;
+    opacity: .9;
+}
+
+#userAnswers {
+    margin-bottom: 8px;
+    margin-top:4px;
+    visibility: hidden;
+    font-size: 20px;
+    opacity: .9;
+}
+
+#resultsDiv {
+    font-size: 20px;
+    opacity: .9;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+    }
 }

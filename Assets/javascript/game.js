@@ -21,6 +21,7 @@ const answerSheet = [" 1.c", " 2.c", " 3.c"," 4.c"," 5.d"," 6.b"," 7.d"," 8.b"];
     $(".container").css("visibility", "visible");
     $("#show-number").css("visibility", "visible");
     $("#answerSheet").css("visibility", "visible");
+    $("#userAnswers").css("visibility", "visible");
  };
 
 
@@ -93,10 +94,12 @@ function submitAnswers() {
         score++;
     };
 
+    let userAnswers = ["1." + q1, " 2." + q2,  " 3."+ q3, " 4."+ q4, " 5."+ q5, " 6."+ q6, " 7."+ q7, " 8."+ q8 ];
     // $(".container").css("display", "none");
     $(".container").css("display", "none");
     $("#show-number").css("visibility", "hidden");
-    $("#answerSheet").html("Easter Answers: " + answerSheet)
+    $("#answerSheet").html("Correct Answers: " + answerSheet);
+    $("#userAnswers").html("Your Answers: " + userAnswers);
     $("#resultsDiv").html("You got " + score +" out of " + total+ " questions correct.");
     return false;
 };
