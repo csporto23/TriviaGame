@@ -10,39 +10,40 @@
 
 //timer**
 
-let number = 300;
-var intervalId;
+ let number = 3;
+ var intervalId;
 
-function stop() {
-    clearInterval(intervalId);
-  };
+ function stop() {
+     clearInterval(intervalId);
+   };
 
-function run() {
-    clearInterval(intervalId);
-    intervalId = setInterval(decrement, 1000);
-  };
+ function run() {
+  clearInterval(intervalId);
+     intervalId = setInterval(decrement, 1000);
+   };
 
-function decrement() {
-    number--;
-$("#show-number").html(number);
+ function decrement() {
+     number--;
+ $("#show-number").html(number);
 
-if (number === 0) {
-    stop();
-}
-};
+ if (number === 0) {
+     stop();
+     $("submitButton").on("click", submitAnswers());
+ }
+ };
 
-$("#startButton").on("click", run);
+ $("#startButton").on("click", run);
 
-$("#submitButton").on("click", stop);
+ $("#submitButton").on("click", stop);
 
-
+ 
 //answers**
 
-const total = 8;
-var score = 0;
+    var total = 8;
+    var score = 0;
 
 function submitAnswers() {
-    
+
 
     //get the users choice
     var q1 = document.forms["quizForm"]["q1"].value;
@@ -54,66 +55,50 @@ function submitAnswers() {
     var q7 = document.forms["quizForm"]["q7"].value;
     var q8 = document.forms["quizForm"]["q8"].value;
 
-    var answers = ["a","c","d","b","a","b","d","c"];
-    //console.log(q1);
+    const answers = ["a","a","a","a","a","a","a","a"];
+    
 
     if(q1 === answers[0]) {
          score++;
-    }
+    };
 
     if(q2 === answers[1]) {
         score++;
-    }
+    };
 
     if(q3 === answers[2]) {
         score++;
-    }
+    };
 
     if(q4 === answers[3]) {
         score++;
-    }
+    };
 
     if(q5 === answers[4]) {
         score++;
-    }
+    };
 
     if(q6 === answers[5]) {
         score++;
-    }
+    };
 
     if(q7 === answers[6]) {
         score++;
-    }
+    };
 
     if(q8 === answers[7]) {
         score++;
-    }
+    };
 
+    $(".container").css("display", "none");
 
-    $(".container").css("display", "none")
-
-    //$(".row").css("display", "none")
-
-    
+    $("#resultsDiv").html("You got " + score +" out of " + total+ " questions correct.");
     return false;
-}
+};
 
-
-function callResults() {
-    const results = "You got " +score+" out of " + total + " questions correct."
-    $("#results").html(results)
-}
- 
 // function answerSheet() {
 //     for (let i = 0; i < answers.length; i++)
 //     $("#answerSheet").html(answers[i]);
 // }
-
-$("#submitButton").on("click", function(){
-    callResults();
-})
-
-
-// submitAnswers();
 //const startGame = 0
 //if(time === 0:00){submitAnswers();};
