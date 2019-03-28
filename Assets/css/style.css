@@ -8,6 +8,7 @@ header {
 .container {
     opacity: .9;
     margin-bottom: 20px;
+    visibility: hidden;
 }
 
 #submitButton {

@@ -10,7 +10,7 @@
 
 //timer**
 
- let number = 3;
+ let number = 4;
  var intervalId;
 
  function stop() {
@@ -22,15 +22,30 @@
      intervalId = setInterval(decrement, 1000);
    };
 
+   function containerDisappear() {
+    $(".container").css("visibility", "visible");
+   }
+
  function decrement() {
      number--;
  $("#show-number").html(number);
 
- if (number === 0) {
-     stop();
-     $("submitButton").on("click", submitAnswers());
- }
+ if (number > 0 && number <= 60 ){
+    $("#startButton").css("display", "none");
+    containerDisappear();
  };
+
+
+ if (number === 0) {
+    stop();
+    $("submitButton").on("click", submitAnswers());
+    $("#startButton").css("display", "none");
+    $(".container").css("display", "none");
+    }
+ };
+
+
+ 
 
  $("#startButton").on("click", run);
 
@@ -90,7 +105,7 @@ function submitAnswers() {
         score++;
     };
 
-    $(".container").css("display", "none");
+    // $(".container").css("display", "none");
 
     $("#resultsDiv").html("You got " + score +" out of " + total+ " questions correct.");
     return false;
